@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG - Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Main Content -->
+    <div class="main-content hidden">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">PG</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="Profile.jpg" alt="Profile Picture">
+                </div>
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Pratiksha Gawade</span></h1>
+                    <h2>Graphic Designer</h2>
+                    <p>Creating stunning visual experiences that leave a lasting impression</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-text">
+                        <p>A passionate graphic designer crafting beautiful visual experiences through creative design solutions. I love bringing ideas to life through innovative design and attention to detail.</p>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-categories">
+                            <div class="skill-category">
+                                <h4>Design</h4>
+                                <ul>
+                                    <li>Social Media Design</li>
+                                    <li>Brand Identity</li>
+                                    <li>Digital Illustrations</li>
+                                    <li>Thumbnail Design</li>
+                                    <li>Poster Design</li>
+                                    <li>Logo Design</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools</h4>
+                                <ul>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Canva Pro</li>
+                                    <li>Figma</li>
+                                    <li>Adobe After Effects</li>
+                                    <li>Adobe InDesign</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h3>Achievements</h3>
+                        <div class="achievement-grid">
+                            <div class="achievement-item">
+                                <span class="achievement-number">15+</span>
+                                <p>Design Projects</p>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-number">3+</span>
+                                <p>Design Awards</p>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-number">8+</span>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-number">2+</span>
+                                <p>Years Learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="work">
+            <h2>Featured Work</h2>
+            <div class="work-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="banner">Banners</button>
+                <button class="filter-btn" data-filter="poster">Posters</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="logo">Logos</button>
+                <button class="filter-btn" data-filter="brochure">Brochures</button>
+                <button class="filter-btn" data-filter="illustration">Illustrations</button>
+                <button class="filter-btn" data-filter="thumbnail">Thumbnails</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Banners -->
+                <div class="portfolio-item wide" data-category="banner">
+                    <div class="image-holder">
+                        <img src="work/banner/Cover 4.jpg" alt="Brand Identity">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="banner">
+                    <div class="image-holder">
+                        <img src="work/banner/Cover file.jpg" alt="Marketing Campaign">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="banner">
+                    <div class="image-holder">
+                        <img src="work/banner/Fast Food _Event_Page_cover.jpg" alt="Food Campaign">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="banner">
+                    <div class="image-holder">
+                        <img src="work/banner/FightNight_1920x1080.jpg" alt="Event Banner">
+                    </div>
+                </div>
+
+                <!-- Posters -->
+                <div class="portfolio-item tall" data-category="poster">
+                    <div class="image-holder">
+                        <img src="work/poster/BALCK N WHITE.jpg" alt="Event Poster">
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-category="poster">
+                    <div class="image-holder">
+                        <img src="work/poster/edit pic.jpg" alt="Creative Poster">
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-category="poster">
+                    <div class="image-holder">
+                        <img src="work/poster/kayaking.jpg" alt="Adventure Poster">
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-category="poster">
+                    <div class="image-holder">
+                        <img src="work/poster/7.jpg" alt="Adventure Poster">
+                    </div>
+                </div>
+
+                <!-- Branding -->
+                <div class="portfolio-item square" data-category="branding">
+                    <div class="image-holder">
+                        <img src="work/branding/branding.jpg" alt="Brand Identity">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="branding">
+                    <div class="image-holder">
+                        <img src="work/branding/branding2.jpg" alt="Brand Identity">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="branding">
+                    <div class="image-holder">
+                        <img src="work/branding/branding3.jpg" alt="Brand Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="branding">
+                    <div class="image-holder">
+                        <img src="work/branding/branding4.jpg" alt="Brand Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="branding">
+                    <div class="image-holder">
+                        <img src="work/branding/branding5.jpg" alt="Brand Design">
+                    </div>
+                </div>
+
+                <!-- Logos -->
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/1.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/2.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/3.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/4.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/5.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/6.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/7.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/8.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/9.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                <div class="portfolio-item square" data-category="logo">
+                    <div class="image-holder">
+                        <img src="work/logo2/10.jpg" alt="Logo Design">
+                    </div>
+                </div>
+                
+                <!-- Illustrations -->
+                <div class="portfolio-item tall" data-category="illustration">
+                    <div class="image-holder">
+                        <img src="work/other work/1.jpg" alt="Illustration">
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-category="illustration">
+                    <div class="image-holder">
+                        <img src="work/other work/2.png" alt="Illustration">
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-category="illustration">
+                    <div class="image-holder">
+                        <img src="work/other work/3.jpg" alt="Illustration">
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-category="illustration">
+                    <div class="image-holder">
+                        <img src="work/other work/4.jpg" alt="Illustration">
+                    </div>
+                </div>
+                <div class="portfolio-item tall" data-category="illustration">
+                    <div class="image-holder">
+                        <img src="work/other work/5.jpg" alt="Illustration">
+                    </div>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/1.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/2.jpg" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/3.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/4.jpg" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/5.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/6.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/7.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/8.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/9.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/10.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/11.jpg" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/12.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/13.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/14.jpg" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/15.png" alt="Thumbnail Design">
+                    </div>
+                </div>
+                <div class="portfolio-item wide" data-category="thumbnail">
+                    <div class="image-holder">
+                        <img src="work/thumbnail/new/16.jpg" alt="Thumbnail Design">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>hello@pgdesign.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Mumbai, India</p>
+                    </div>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">
+                        Send Message
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" class="social-link"><i class="fab fa-behance"></i></a> -->
+                    <!-- <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a> -->
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
